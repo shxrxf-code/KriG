@@ -134,22 +134,18 @@ body {
 .stagger-5 { animation-delay: 0.5s; }
 .stagger-6 { animation-delay: 0.6s; }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+@keyframes marquee-loop {
+  from { transform: translateX(0); }
+  to { transform: translateX(-25%); }
 }
 
-@keyframes marquee-reverse {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+.animate-marquee-loop {
+  animation: marquee-loop 40s linear infinite;
 }
 
-.animate-marquee {
-  animation: marquee 40s linear infinite;
-}
-
-.animate-marquee-reverse {
-  animation: marquee-reverse 40s linear infinite;
+.animate-marquee-loop-paused {
+  animation: marquee-loop 40s linear infinite;
+  animation-play-state: paused;
 }
 
 @keyframes float-slow {
@@ -184,8 +180,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee,
-  .animate-marquee-reverse {
+  .animate-marquee-loop,
+  .animate-marquee-loop-paused {
     animation: none;
   }
   .animate-float-slow,
