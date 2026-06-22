@@ -10,7 +10,7 @@ const navLinks = {
   company: [
     { label: "About", href: "#" },
     { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
+    { label: "Why Us", href: "#why-choose" },
     { label: "Contact", href: "#contact" },
   ],
   solutions: [

@@ -6,7 +6,8 @@ import { WhyKrigenix } from "@/components/sections/why-krigenix"
 import { Solutions } from "@/components/sections/solutions"
 import { Process } from "@/components/sections/process"
 import { Ecosystem } from "@/components/sections/ecosystem"
-import { Portfolio } from "@/components/sections/portfolio"
+import { WhyChoose } from "@/components/sections/why-choose"
+import { Industries } from "@/components/sections/industries"
 import { Testimonials } from "@/components/sections/testimonials"
 import { FAQ } from "@/components/sections/faq"
 import { Contact } from "@/components/sections/contact"
@@ -24,7 +25,8 @@ export default function Home() {
         <Solutions />
         <Process />
         <Ecosystem />
-        <Portfolio />
+        <WhyChoose />
+        <Industries />
         <Testimonials />
         <FAQ />
         <Contact />
